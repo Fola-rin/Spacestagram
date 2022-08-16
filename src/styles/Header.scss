@@ -1,0 +1,234 @@
+@import "./colors";
+@import "./fonts";
+@import "./mixins";
+
+.header {
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid rgb(219, 219, 219);
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	z-index: 1;
+	.header-wrapper {
+		width: 935px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 15px 0;
+		.backBtn {
+			display: none;
+		}
+		.logo {
+			width: 50%;
+			display: flex;
+			justify-content: flex-start;
+			img {
+				height: 30px;
+			}
+			.page {
+				display: none;
+			}
+		}
+		.search-container {
+			position: relative;
+			.trigger {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				position: relative;
+				width: 250px;
+				input {
+					background-color: rgb(239, 239, 239);
+					padding: 8px 35px;
+					border-radius: 8px;
+					width: 100%;
+				}
+				.search-icon {
+					position: absolute;
+					height: 100%;
+					top: 0;
+					left: 0;
+					display: flex;
+					align-items: center;
+					padding-left: 10px;
+				}
+				.cancel-icon {
+					position: absolute;
+					height: 100%;
+					top: 0;
+					right: 0;
+					display: flex;
+					align-items: center;
+					padding-right: 10px;
+					svg {
+						color: #c7c7c7;
+						font-size: 18px;
+					}
+				}
+			}
+			.dropdown {
+				position: absolute;
+				top: 130%;
+				left: 50%;
+				transform: translateX(-50%);
+				&::after {
+					content: " ";
+					position: absolute;
+					bottom: 100%;
+					left: 50%;
+					margin-left: -5px;
+					border-width: 6px;
+					border-style: solid;
+					border-color: transparent transparent rgb(64 60 67 / 16%) transparent;
+				}
+				background-color: #fff;
+				box-shadow: 0px 3px 7px 2px rgb(64 60 67 / 16%);
+				border-radius: 6px;
+				.contents {
+					padding: 20px;
+					width: 300px;
+					.info-wrapper {
+						@include flex-center-between;
+						margin-bottom: 10px;
+						.info {
+							@include flex-center-only;
+							a {
+								display: flex;
+							}
+							img {
+								width: 40px;
+								height: 40px;
+								border-radius: 500px;
+								object-fit: cover;
+								margin-right: 13px;
+							}
+							div {
+								font-size: 14px;
+								a {
+									font-weight: 600;
+								}
+							}
+						}
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+					.no-results {
+						color: rgb(142, 142, 142);
+						font-size: 14px;
+						text-align: center;
+						padding: 50px 0;
+					}
+				}
+			}
+		}
+		.nav-wrapper {
+			width: 50%;
+			display: flex;
+			justify-content: flex-end;
+			a {
+				&:first-of-type {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
+.bottom-nav {
+	display: none;
+}
+@media screen and(max-width: 992px) {
+	.header {
+		.header-wrapper {
+			width: 100%;
+			padding: 15px 30px;
+		}
+	}
+}
+
+@media screen and(max-width: 768px) {
+	.header {
+		height: 46px;
+		.header-wrapper {
+			padding: 0 22px;
+			.nav-wrapper,
+			.search-container {
+				display: none;
+			}
+			.logo {
+				width: 100%;
+				@include flex-center;
+				a {
+					display: flex;
+				}
+				img {
+					height: 28px;
+				}
+				.page {
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 200px;
+					height: 100%;
+					background-color: #fff;
+					@include flex-center;
+					h1 {
+						font-size: 16px;
+						font-weight: 600;
+					}
+				}
+			}
+			.backBtn {
+				display: block;
+				width: 21px;
+				@include flex-center;
+				button {
+					display: flex;
+					svg {
+						font-size: 21px;
+					}
+				}
+			}
+		}
+	}
+	.bottom-nav {
+		@include flex-center-only;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		border-top: 1px solid rgb(219, 219, 219);
+		z-index: 100;
+		.nav-wrapper {
+			@include flex-center-between;
+			height: 46px;
+			width: 100%;
+			.link {
+				flex: 1;
+				@include flex-center;
+				a {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 450px) {
+	.header {
+		.header-wrapper {
+			padding: 0 16px;
+			.logo {
+				.page {
+					h1 {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

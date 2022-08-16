@@ -1,0 +1,19 @@
+.footer {
+	text-align: center;
+	font-size: 14px;
+	color: rgb(142, 142, 142);
+	padding: 50px 40px 30px;
+	background-color: rgb(250, 250, 250);
+	a {
+		color: rgb(0, 55, 107);
+	}
+}
+
+@media screen and(max-width: 768px) {
+	.footer {
+		background-color: #fff;
+		padding-bottom: 70px;
+		font-size: 13px;
+		padding: 20px 20px 70px;
+	}
+}

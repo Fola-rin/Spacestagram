@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d2d023da.css",
+    "main.js": "/static/js/main.ce499315.js",
+    "static/js/787.eb27d367.chunk.js": "/static/js/787.eb27d367.chunk.js",
+    "static/media/loading.webp": "/static/media/loading.c3f6e063381106a859c4.webp",
+    "static/media/mars-logo.jpg": "/static/media/mars-logo.25a94e06c856bc746c86.jpg",
+    "static/media/nasa-logo.jpg": "/static/media/nasa-logo.b172273563842664d7e8.jpg",
+    "static/media/favourites.png": "/static/media/favourites.c7a65c8fb97b1ecc36c8.png",
+    "static/media/logo.png": "/static/media/logo.9e4cec5d0c56e0729272.png",
+    "index.html": "/index.html",
+    "static/media/heart.svg": "/static/media/heart.4fb327458c13f2ea5d2b341b015f54d8.svg",
+    "static/media/searchPage.svg": "/static/media/searchPage.59b7367e9a7fa3f8b6cf1cdf0fa2d2d4.svg",
+    "static/media/search.svg": "/static/media/search.684896a810fda5464353bcff414a9bdd.svg",
+    "static/media/heart-black.svg": "/static/media/heart-black.fccb736597748c5c38b4228de3d2ebcd.svg",
+    "static/media/heart-red.svg": "/static/media/heart-red.4de56af4fbe57c28b2894c2a6f783d8f.svg",
+    "static/media/heart-white.svg": "/static/media/heart-white.80c0d3b32640a7cdb7ef344a96b3801d.svg",
+    "static/media/searchPage-black.svg": "/static/media/searchPage-black.d178a8617a4a6eea8f26aa526064190c.svg",
+    "static/media/home-black.svg": "/static/media/home-black.ee13dd34ba2299040a709bb4e9220d82.svg",
+    "static/media/home.svg": "/static/media/home.8b9ecbd26f174855feb3750421becb0b.svg",
+    "main.d2d023da.css.map": "/static/css/main.d2d023da.css.map",
+    "main.ce499315.js.map": "/static/js/main.ce499315.js.map",
+    "787.eb27d367.chunk.js.map": "/static/js/787.eb27d367.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2d023da.css",
+    "static/js/main.ce499315.js"
+  ]
+}

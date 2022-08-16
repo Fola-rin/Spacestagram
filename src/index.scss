@@ -1,0 +1,157 @@
+@import "./styles/colors";
+@import "./styles/fonts";
+@import "./styles/mixins";
+
+@keyframes like-heart-animation {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	15% {
+		opacity: 0.9;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	30% {
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+	45%,
+	80% {
+		opacity: 0.9;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes like-heart-animation-fade {
+	0%,
+	to {
+		opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	15% {
+		opacity: 0.9;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	30% {
+		-webkit-transform: scale(0.95);
+		transform: scale(0.95);
+	}
+	45%,
+	80% {
+		opacity: 0.9;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+	text-decoration: none;
+	background: none;
+	border: none;
+	scroll-behavior: smooth;
+	// font-family: $font-libre-franklin;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+input {
+	font: inherit;
+}
+
+main {
+	padding-top: 30px;
+	@include flex-center;
+	background-color: rgb(250, 250, 250);
+	.main-wrapper {
+		width: 935px;
+	}
+}
+
+a {
+	color: inherit;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.no-match {
+	text-align: center;
+	padding: 50px;
+	width: 100%;
+	h2 {
+		font-size: 22px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	p {
+		a {
+			color: rgb(0, 55, 107);
+		}
+	}
+}
+
+.liked-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+
+	&.liked {
+		z-index: unset;
+		animation: 1s like-heart-animation-fade ease-in-out forwards;
+	}
+	svg {
+		opacity: 0.75;
+		transform: scale(4);
+	}
+}
+button {
+	svg.like {
+		animation: 1.5s like-heart-animation ease-in-out forwards;
+	}
+}
+
+@media screen and(max-width: 992px) {
+	main {
+		.main-wrapper {
+			width: 100%;
+			padding: 0 30px;
+		}
+	}
+}
+@media screen and(max-width: 768px) {
+	main {
+		background-color: #fff;
+	}
+}
+
+@media screen and(max-width: 450px) {
+	main {
+		padding-top: 20px;
+		.main-wrapper {
+			width: 100%;
+			padding: 0;
+		}
+	}
+}
