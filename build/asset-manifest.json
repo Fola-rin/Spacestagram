@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2d023da.css",
-    "main.js": "/static/js/main.ce499315.js",
+    "main.css": "/static/css/main.337874e8.css",
+    "main.js": "/static/js/main.bc891b84.js",
     "static/js/787.eb27d367.chunk.js": "/static/js/787.eb27d367.chunk.js",
     "static/media/loading.webp": "/static/media/loading.c3f6e063381106a859c4.webp",
     "static/media/mars-logo.jpg": "/static/media/mars-logo.25a94e06c856bc746c86.jpg",
@@ -18,12 +18,12 @@
     "static/media/searchPage-black.svg": "/static/media/searchPage-black.d178a8617a4a6eea8f26aa526064190c.svg",
     "static/media/home-black.svg": "/static/media/home-black.ee13dd34ba2299040a709bb4e9220d82.svg",
     "static/media/home.svg": "/static/media/home.8b9ecbd26f174855feb3750421becb0b.svg",
-    "main.d2d023da.css.map": "/static/css/main.d2d023da.css.map",
-    "main.ce499315.js.map": "/static/js/main.ce499315.js.map",
+    "main.337874e8.css.map": "/static/css/main.337874e8.css.map",
+    "main.bc891b84.js.map": "/static/js/main.bc891b84.js.map",
     "787.eb27d367.chunk.js.map": "/static/js/787.eb27d367.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2d023da.css",
-    "static/js/main.ce499315.js"
+    "static/css/main.337874e8.css",
+    "static/js/main.bc891b84.js"
   ]
 }

@@ -8,6 +8,7 @@ import NoMatch from "./pages/NoMatch";
 import Account from "./pages/Account";
 import Post from "./pages/Post";
 import Layout from "./components/Layout";
+import SearchPage from "./pages/Search";
 
 type Props = {};
 
@@ -24,6 +25,8 @@ const App = (props: Props) => {
 			<Layout>
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/search" element={<SearchPage />} />
+
 					<Route path="/:account" element={<Account />}>
 						<Route path=":post" element={<Post />} />
 					</Route>

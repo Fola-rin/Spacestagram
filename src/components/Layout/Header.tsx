@@ -150,7 +150,7 @@ const Header = (props: Props) => {
 
 export default Header;
 
-const SearchComponent = ({
+export const SearchComponent = ({
 	src,
 	size,
 	title,
@@ -164,7 +164,7 @@ const SearchComponent = ({
 					<img src={src} alt="Favourites" className={size} />
 				</Link>
 				<div>
-					<Link to={title}>{title}</Link>
+					<Link to={"/" + title}>{title}</Link>
 				</div>
 			</div>
 		</div>

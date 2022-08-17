@@ -135,6 +135,7 @@ const HomeDataComponent = ({ id, item }: HomeDataComponentProps) => {
 	const likes = useAppSelector((state) => state.likes);
 	const [showLiked, setshowLiked] = useState<boolean>(false);
 	const [showImgLiked, setshowImgLiked] = useState<boolean>(false);
+	const [showMore, setShowMore] = useState<boolean>(false);
 
 	useEffect(() => {
 		if (likes.find((like) => like.id === item.id)) {
@@ -190,7 +191,14 @@ const HomeDataComponent = ({ id, item }: HomeDataComponentProps) => {
 				</button>
 				<div>
 					<Link to={item.account}>{item.account}</Link>&nbsp;
-					{item.desc}
+					{showMore || item.desc.length < 100 ? (
+						item.desc
+					) : (
+						<>
+							{item.desc.slice(0, 100)}...
+							<span onClick={() => setShowMore(true)}> more</span>
+						</>
+					)}
 				</div>
 				<p>{item.date}</p>
 			</div>
