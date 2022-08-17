@@ -29,6 +29,7 @@ const Post = (props: Props) => {
 	const likes = useAppSelector((state) => state.likes);
 	const [showLiked, setshowLiked] = useState<boolean>(false);
 	const [showImgLiked, setshowImgLiked] = useState<boolean>(false);
+	const [showMore, setShowMore] = useState<boolean>(false);
 
 	const [pageNotFound, setPageNotFound] = useState<string>("");
 	const [postDisplayData, setPostDisplayData] = useState<HomeDataObjectType>();
@@ -90,6 +91,7 @@ const Post = (props: Props) => {
 										? nasaLogo
 										: FavouriteDP
 								}
+								loading="lazy"
 								alt={params.account ? params.account : ""}
 							/>
 							<Link to={`/${params.account}`}>{params.account}</Link>
@@ -164,7 +166,19 @@ const Post = (props: Props) => {
 									<>
 										<p>
 											<Link to={`/${params.account}`}>{params.account}</Link>
-											&nbsp; {postDisplayData?.desc}
+											&nbsp;{" "}
+											{postDisplayData?.desc ? (
+												showMore || postDisplayData.desc.length < 100 ? (
+													postDisplayData.desc
+												) : (
+													<>
+														{postDisplayData.desc.slice(0, 100)}...
+														<span onClick={() => setShowMore(true)}> more</span>
+													</>
+												)
+											) : (
+												"Loading..."
+											)}
 										</p>
 										<p>{postDisplayData?.date}</p>
 									</>

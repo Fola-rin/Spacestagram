@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.337874e8.css",
-    "main.js": "/static/js/main.bc891b84.js",
+    "main.css": "/static/css/main.3a69cee8.css",
+    "main.js": "/static/js/main.6e00b03d.js",
+    "static/css/386.061c4a8e.chunk.css": "/static/css/386.061c4a8e.chunk.css",
+    "static/js/386.2dd712f1.chunk.js": "/static/js/386.2dd712f1.chunk.js",
+    "static/css/770.e63f760a.chunk.css": "/static/css/770.e63f760a.chunk.css",
+    "static/js/770.d8dcf33c.chunk.js": "/static/js/770.d8dcf33c.chunk.js",
+    "static/css/610.45185dff.chunk.css": "/static/css/610.45185dff.chunk.css",
+    "static/js/610.fccb199a.chunk.js": "/static/js/610.fccb199a.chunk.js",
     "static/js/787.eb27d367.chunk.js": "/static/js/787.eb27d367.chunk.js",
+    "static/js/254.5a36fc24.chunk.js": "/static/js/254.5a36fc24.chunk.js",
     "static/media/loading.webp": "/static/media/loading.c3f6e063381106a859c4.webp",
     "static/media/mars-logo.jpg": "/static/media/mars-logo.25a94e06c856bc746c86.jpg",
     "static/media/nasa-logo.jpg": "/static/media/nasa-logo.b172273563842664d7e8.jpg",
     "static/media/favourites.png": "/static/media/favourites.c7a65c8fb97b1ecc36c8.png",
     "static/media/logo.png": "/static/media/logo.9e4cec5d0c56e0729272.png",
+    "static/media/logo-12.svg": "/static/media/logo-12.7e625d7e5fc1c2813119b5908ff73c2f.svg",
     "index.html": "/index.html",
     "static/media/heart.svg": "/static/media/heart.4fb327458c13f2ea5d2b341b015f54d8.svg",
     "static/media/searchPage.svg": "/static/media/searchPage.59b7367e9a7fa3f8b6cf1cdf0fa2d2d4.svg",
@@ -18,12 +26,19 @@
     "static/media/searchPage-black.svg": "/static/media/searchPage-black.d178a8617a4a6eea8f26aa526064190c.svg",
     "static/media/home-black.svg": "/static/media/home-black.ee13dd34ba2299040a709bb4e9220d82.svg",
     "static/media/home.svg": "/static/media/home.8b9ecbd26f174855feb3750421becb0b.svg",
-    "main.337874e8.css.map": "/static/css/main.337874e8.css.map",
-    "main.bc891b84.js.map": "/static/js/main.bc891b84.js.map",
-    "787.eb27d367.chunk.js.map": "/static/js/787.eb27d367.chunk.js.map"
+    "main.3a69cee8.css.map": "/static/css/main.3a69cee8.css.map",
+    "main.6e00b03d.js.map": "/static/js/main.6e00b03d.js.map",
+    "386.061c4a8e.chunk.css.map": "/static/css/386.061c4a8e.chunk.css.map",
+    "386.2dd712f1.chunk.js.map": "/static/js/386.2dd712f1.chunk.js.map",
+    "770.e63f760a.chunk.css.map": "/static/css/770.e63f760a.chunk.css.map",
+    "770.d8dcf33c.chunk.js.map": "/static/js/770.d8dcf33c.chunk.js.map",
+    "610.45185dff.chunk.css.map": "/static/css/610.45185dff.chunk.css.map",
+    "610.fccb199a.chunk.js.map": "/static/js/610.fccb199a.chunk.js.map",
+    "787.eb27d367.chunk.js.map": "/static/js/787.eb27d367.chunk.js.map",
+    "254.5a36fc24.chunk.js.map": "/static/js/254.5a36fc24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.337874e8.css",
-    "static/js/main.bc891b84.js"
+    "static/css/main.3a69cee8.css",
+    "static/js/main.6e00b03d.js"
   ]
 }

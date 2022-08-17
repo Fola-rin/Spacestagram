@@ -51,6 +51,7 @@
 					transform: none;
 					width: 100%;
 					height: 100%;
+					border-radius: 500px;
 				}
 			}
 			.main-img {
@@ -185,16 +186,25 @@
 			.home-data {
 				border: none;
 				.main-img {
-					height: 500px;
+					height: 400px;
 				}
 				.data-header {
 					padding-top: 0;
+					font-size: 14px;
+					.img-wrapper {
+						margin-right: 8px;
+					}
 				}
 				.data-desc-action {
 					width: 100%;
 					overflow: auto;
 					div {
 						width: 100%;
+					}
+					p {
+						color: rgb(142, 142, 142);
+						font-size: 11px;
+						text-transform: uppercase;
 					}
 				}
 			}

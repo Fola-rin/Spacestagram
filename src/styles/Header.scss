@@ -187,6 +187,7 @@
 				@include flex-center;
 				button {
 					display: flex;
+					color: inherit;
 					svg {
 						font-size: 21px;
 					}
@@ -230,5 +231,11 @@
 				}
 			}
 		}
+	}
+}
+
+@supports (margin-bottom: env(safe-area-inset-bottom)) {
+	.bottom-nav {
+		padding-bottom: env(safe-area-inset-bottom);
 	}
 }

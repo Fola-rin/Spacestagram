@@ -132,6 +132,27 @@ button {
 	}
 }
 
+.fallback {
+	width: 100%;
+	min-height: 80vh;
+	@include flex-center;
+	flex-direction: column;
+	div {
+		width: 100%;
+		@include flex-center;
+		svg {
+			width: 100px;
+			margin-bottom: 30px;
+		}
+	}
+	p {
+		font-size: 15px;
+		color: rgb(142, 142, 142);
+		a {
+			color: rgb(0, 55, 107);
+		}
+	}
+}
 @media screen and(max-width: 992px) {
 	main {
 		.main-wrapper {

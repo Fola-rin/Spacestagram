@@ -157,7 +157,8 @@ const HomeDataComponent = ({ id, item }: HomeDataComponentProps) => {
 								? nasaLogo
 								: FavouriteDP
 						}
-						alt="Favourites"
+						alt={item.account ? item.account : ""}
+						loading="lazy"
 					/>
 				</div>
 				<Link to={item.account}>{item.account}</Link>
@@ -175,7 +176,7 @@ const HomeDataComponent = ({ id, item }: HomeDataComponentProps) => {
 					}
 				}}
 			>
-				<img src={item.imgUrl} alt={item.title} />
+				<img src={item.imgUrl} alt={item.title} loading="lazy" />
 				<div className={`liked-img ${showImgLiked ? "liked" : ""}`}>
 					<HeartWhiteIcon />
 				</div>
@@ -241,7 +242,7 @@ const HomeInfoComponent = ({
 		<div className="info-wrapper">
 			<div className="info">
 				<Link to={title}>
-					<img src={src} alt="Favourites" className={size} />
+					<img src={src} alt="Favourites" className={size} loading="lazy" />
 				</Link>
 				<div>
 					<Link to={title}>{title}</Link>

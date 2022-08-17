@@ -102,6 +102,10 @@
 							a {
 								font-weight: 600;
 							}
+							span {
+								color: rgb(142, 142, 142);
+								font-size: 14px;
+							}
 						}
 						&:last-of-type {
 							font-size: 12px;
@@ -209,6 +213,9 @@
 				}
 				.desc-header.mobile {
 					padding: 15px 16px;
+					img {
+						margin-right: 8px;
+					}
 				}
 				.desc-wrapper {
 					padding: 10px 16px;
