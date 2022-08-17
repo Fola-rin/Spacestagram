@@ -81,6 +81,7 @@ main {
 	padding-top: 30px;
 	@include flex-center;
 	background-color: rgb(250, 250, 250);
+	min-height: 50vh;
 	.main-wrapper {
 		width: 935px;
 	}
